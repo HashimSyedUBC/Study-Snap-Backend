@@ -1,11 +1,12 @@
 class Sections:
-    def __init__(self, section_name, summary, test, raw):
+    def __init__(self, section_name, summary, test, raw, note_id):
         # Initialize Sections attributes
         self._section_name = section_name
         self._summary = summary
         self._test = test
         self._order = 0
         self._raw_content = raw
+        self._note_id = note_id
 
     # Getter and Setter for section_name
     @property
