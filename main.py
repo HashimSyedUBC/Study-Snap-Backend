@@ -3,7 +3,7 @@ from openai import OpenAI
 import slate3k as slate
 
 # Initialize the OpenAI client with your API key
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=os.getenv('API_KEY'))
 
 def generate_summary_and_save(file_path, output_path):
     with open(file_path, 'rb') as f:

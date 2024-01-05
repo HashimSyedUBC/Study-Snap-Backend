@@ -46,7 +46,7 @@ class Course:
     def university(self, value):
         """Setter for university."""
         self._university = value
-    
+        
     # Method to add notes
     def add_notes(self, notes):
         self._sections.append(notes)
